@@ -9,7 +9,23 @@ const Close = document.querySelectorAll('.close'),
     menuCall = document.querySelector('#CallForm'),
     btnPhone = document.querySelectorAll('.NUMBER'),
     btnForm = document.querySelectorAll('.buttons_form'),
-    menuThanks = document.querySelector('#Thanks');
+    menuThanks = document.querySelector('#Thanks'),
+    hamb = document.querySelector('.head__hamb');
+
+
+hamb.addEventListener('click', ()=> {
+    if (!hamb.classList.contains('hambActive')) {
+        hamb.classList.add('hambActive');
+        document.querySelector('.blackout__Menu').style.opacity = 1;
+        document.querySelector('.blackout__Menu').style.display = "block";
+        document.querySelector('.head__menu').classList.add('ActiveMenu');
+    } else {
+        hamb.classList.remove('hambActive');
+        fadeOut(document.querySelector('.blackout__Menu'));
+        document.querySelector('.head__menu').classList.remove('ActiveMenu');
+    }
+    
+});
 
 
 btnPhone.forEach(item => {
@@ -96,6 +112,7 @@ function fadeOut (elem) {
         if (elem.style.opacity < 0.1) {
             clearInterval(timer);
             elem.classList.remove('callActive');
+            document.querySelector('.blackout__Menu').style.display = "none";
         }
         op = op - 0.1;
         elem.style.opacity = op;
