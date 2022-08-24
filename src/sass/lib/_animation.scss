@@ -1,0 +1,64 @@
+//callback
+@keyframes CallbackAct {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+//
+
+@keyframes MenuLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes MenuLeftBack {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+//slayder
+@keyframes StartActiveRight1 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes StartActiveRight2 {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes StartActiveLeft1 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes StartActiveLeft2 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+

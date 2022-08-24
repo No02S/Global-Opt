@@ -1,0 +1,33 @@
+@import "lib/fonts.scss";
+@import "lib/animation.scss";
+@import "lib/varaibles.scss";
+@import "objects/buttons.scss";
+@import "objects/head.scss";
+@import "objects/title.scss";
+@import "objects/advantage.scss";
+@import "objects/ourWork.scss";
+@import "objects/Panel.scss";
+@import "objects/price.scss";
+@import "objects/Consult.scss";
+@import "objects/Plan.scss";
+@import "objects/Coments.scss";
+@import "objects/QuestForm.scss";
+@import "objects/Footer.scss";
+@import "objects/callBacks.scss";
+* {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width:1170px) {
+    .container {
+        padding: 0 10px;
+    }
+}

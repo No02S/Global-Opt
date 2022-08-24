@@ -1,0 +1,29 @@
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    text-align:  center;
+    &_panel {
+        margin-top: 14px;
+        font-size: 26px;
+        color: white;
+        text-transform: none;
+    }
+    &_Consult {
+        color:#3A3A3A;
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.redHr {
+    margin: 0 auto;
+    margin: 20px auto 11px;
+    background-color: red;
+    border: 0px;
+    opacity: 1;
+    height: 1px;
+    width: 148px;
+}

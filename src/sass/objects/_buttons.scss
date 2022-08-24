@@ -1,0 +1,92 @@
+.buttons {
+    background-color: var(--mC);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.2s all;
+    
+    &_small {
+        width: 160px;
+        height: 45px;
+        border-radius: 22px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &_head-bottom {
+        margin-top: 35px;
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 26px;
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+    &:active {
+        transition: 0s;
+        transform: scale(1);
+    }
+    &_form {
+        width: 180px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: 400;
+        border-radius: 26px;
+        transform: translateY(50%);
+        &:hover {
+            transform:translateY(50%) scale(1.2);
+        }
+        &:active {
+            transition: 0s;
+            transform:translateY(50%) scale(1);
+        }
+    }
+    &_form2 {
+        margin-top: 16px;
+        width: 180px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: 400;
+        border-radius: 26px;
+        justify-self: center;
+        transform: translateY(0%);
+        &:hover {
+            transform:translateY(0%) scale(1.2);
+        }
+        &:active {
+            transition: 0s;
+            transform:translateY(0%) scale(1);
+        }
+    }
+    
+}
+
+@media (max-width:1200px) {
+    .buttons {
+        &:hover {
+            transform: scale(1);
+        }
+        &:active {
+            transform: scale(0.8);
+        }
+        &_form {
+            &:hover {
+                transform:translateY(50%) scale(1);
+            }
+            &:active {
+                transition: 0s;
+                transform:translateY(50%) scale(0.8);
+            }
+        }
+        &_form2 {
+            &:hover {
+                transform:translateY(0%) scale(1);
+            }
+            &:active {
+                transform:translateY(0%) scale(0.8);
+            }
+        }
+        
+    }
+}
