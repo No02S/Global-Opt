@@ -1,1 +1,1 @@
-# GLOPT
+# GLOBAL_OPT
